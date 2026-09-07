@@ -14,5 +14,7 @@ public class ex01 {
         } else {
             System.out.println("O número " + numero + " é ímpar.");
         }
+
+        scanner.close();
     }
 }

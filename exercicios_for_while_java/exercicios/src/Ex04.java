@@ -8,13 +8,31 @@ public class Ex04 {
         System.out.println("Informe a quantidade de medições:");
         int medicoes = scanner.nextInt();
 
-        scanner.close();
+        double maior = Integer.MIN_VALUE;
+        double menor = Integer.MAX_VALUE;
+        double total = 0;
 
         for (int i = 1; i <= medicoes; i ++) {
             System.out.println("Informe a temperatura:");
             double temperatura = scanner.nextDouble();
+
+            total += temperatura;
+
+            if (temperatura > maior) {
+                maior = temperatura;
+            }
+
+            if (temperatura < menor) {
+                menor = temperatura;
+            }
         }
 
+        scanner.close();
 
+        double media = total / medicoes;
+        
+        System.out.println("Maior temperatura: " + maior);
+        System.out.println("Menor temperatura: " + menor);
+        System.out.println("Temperatura média: " + media);
     }
 }

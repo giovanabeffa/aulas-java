@@ -14,13 +14,13 @@ public class Ex01 {
         System.out.println("Informe a quantidade de meses:");
         int meses = scanner.nextInt();
 
+        scanner.close();
+
         for (int i = 1; i <= meses; i++) {
             
             divida = divida + (divida * (juros/100));
 
             System.out.printf("Mês " + i + ": R$ %.2f%n", divida);
         }
-        
-        scanner.close();
     }
 }

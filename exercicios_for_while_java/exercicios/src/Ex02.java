@@ -24,14 +24,13 @@ public class Ex02 {
             totalCombustivel += litrosCombustivel;
         }
 
+        scanner.close();
+
         double consumoMedio = 0;
         consumoMedio = kmTotal / totalCombustivel;
-
 
         System.out.println("\nQuilometragem total: " + kmTotal + " km");
         System.out.println("Combustível utilizado: " + totalCombustivel + " litros");
         System.out.println("Consumo médio: " + consumoMedio + " km/l");
-
-        scanner.close();
     }
 }

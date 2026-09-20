@@ -18,7 +18,7 @@ public class Ex01 {
             
             divida = divida + (divida * (juros/100));
 
-            System.out.printf("Mês %d: R$ %.2f%n", i, divida);
+            System.out.printf("Mês " + i + ": R$ %.2f%n", divida);
         }
         
         scanner.close();
